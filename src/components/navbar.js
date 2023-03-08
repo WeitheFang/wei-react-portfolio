@@ -4,6 +4,7 @@ import logo from "../assets/images/logo.png";
 import githubLogo from "../assets/images/github-logo.png";
 import linkedinLogo from "../assets/images/linkedin-logo.png";
 import emailLogo from "../assets/images/email-logo.png";
+import "../style/navbar.css";
 
 function NavBar() {
   const [activeLink, setActiveLink] = useState("home");
@@ -78,13 +79,21 @@ function NavBar() {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#" target="_blank">
+              <a
+                href="https://github.com/WeitheFang"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={githubLogo} alt="github" />
               </a>
-              <a href="#" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/wei-chi-fang-60610523b/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={linkedinLogo} alt="linkedin" />
               </a>
-              <a href="#" target="_blank">
+              <a href="mailto:weichi.fang@mail.utoronto.ca">
                 <img src={emailLogo} alt="email" />
               </a>
             </div>
