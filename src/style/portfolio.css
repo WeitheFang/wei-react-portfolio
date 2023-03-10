@@ -27,9 +27,8 @@
 }
 
 .card-img-top {
-  padding: 20px !important;
+  padding: 40px !important;
   opacity: 0.8 !important;
-  border-radius: 10px !important;
 }
 
 .btn-primary {
