@@ -1,26 +1,23 @@
 import { Container, Row, Button } from "react-bootstrap";
-import { PDFViewer, Document, Page, Text } from "@react-pdf/renderer";
 import file from "../assets/resume/resume.pdf";
+import { Document, Page, pdfjs } from "react-pdf";
+import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 function Resume() {
-  const ResumeLink =
-    "https://drive.google.com/file/d/1D0TrxKSvdE4UHCzh8m8ojn7ErIZwRB7d/view?usp=share_link";
-
   return (
     <div>
       <Container fluid className="resume-section">
         <Row className="resume">
-          <PDFViewer width="100%" height="100%">
-            <Page>
-              <Text>Resume</Text>
-            </Page>
-          </PDFViewer>
+          <Document file={file} className="d-flex justify-content-center">
+            <Page pageNumber={1} />
+          </Document>
         </Row>
 
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
-            href={ResumeLink}
+            href={file}
             target="_blank"
             style={{ maxWidth: "250px" }}
           >
