@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container, Button, Col, Form } from "react-bootstrap";
+import { Container, Col, Form } from "react-bootstrap";
 import { validateEmail } from "../utils/helper";
 import "../style/contact.css";
 
@@ -8,6 +8,22 @@ function Contact() {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+
+  const handleInputChange = (e) => {
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+
+    if (inputType === "firstName") {
+      setFirstName(inputValue);
+    } else if (inputType === "lastName") {
+      setLastName(inputValue);
+    } else if (inputType === "email") {
+      setEmail(inputValue);
+    } else {
+      setMessage(inputValue);
+    }
+  };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -19,7 +35,7 @@ function Contact() {
       alert("Please enter a valid email address");
       return;
     }
-    alert("Thank you for your message!");
+    alert(`Thank you for your message, ${firstName}!`);
     setFirstName("");
     setLastName("");
     setEmail("");
@@ -38,7 +54,13 @@ function Contact() {
                   <strong>First Name</strong>
                 </h5>
               </Form.Label>
-              <Form.Control type="email" placeholder="First Name" />
+              <Form.Control
+                type="text"
+                placeholder="First Name"
+                name="firstName"
+                value={firstName}
+                onChange={handleInputChange}
+              />
             </Form.Group>
             <Form.Group className="mb-3">
               <Form.Label>
@@ -46,7 +68,13 @@ function Contact() {
                   <strong>Last Name</strong>
                 </h5>
               </Form.Label>
-              <Form.Control type="email" placeholder="Last Name" />
+              <Form.Control
+                type="text"
+                placeholder="Last Name"
+                name="lastName"
+                value={lastName}
+                onChange={handleInputChange}
+              />
             </Form.Group>
             <Form.Group className="mb-3">
               <Form.Label>
@@ -54,7 +82,13 @@ function Contact() {
                   <strong>Email Address</strong>
                 </h5>
               </Form.Label>
-              <Form.Control type="email" placeholder="name@example.com" />
+              <Form.Control
+                type="email"
+                placeholder="name@example.com"
+                name="email"
+                value={email}
+                onChange={handleInputChange}
+              />
             </Form.Group>
             <Form.Group
               className="mb-3"
@@ -65,7 +99,13 @@ function Contact() {
                   <strong>Message</strong>
                 </h5>
               </Form.Label>
-              <Form.Control as="textarea" rows={3} />
+              <Form.Control
+                as="textarea"
+                rows={3}
+                name="message"
+                value={message}
+                onChange={handleInputChange}
+              />
             </Form.Group>
             <div
               className="submit"
@@ -74,7 +114,11 @@ function Contact() {
                 justifyContent: "center",
               }}
             >
-              <button type="submit" className="submit-btn">
+              <button
+                type="submit"
+                className="submit-btn"
+                onClick={handleFormSubmit}
+              >
                 <span>Submit</span>
               </button>
             </div>

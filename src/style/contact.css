@@ -75,11 +75,3 @@
 .submit-btn:hover::before {
   width: 100%;
 }
-
-.Form.Label {
-  font-size: 18px;
-  font-weight: 500;
-  color: #fff;
-  margin-bottom: 8px;
-  display: block;
-}
