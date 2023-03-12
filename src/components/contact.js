@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container, Col, Form, Modal } from "react-bootstrap";
+import { Container, Col, Form } from "react-bootstrap";
 import { validateEmail } from "../utils/helper";
 import "../style/contact.css";
 
