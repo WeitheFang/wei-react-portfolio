@@ -30,7 +30,7 @@ function portfolio() {
             <PortfolioCard
               img={vacationPicker}
               title="Provincial Park Vacation Picker"
-              description="This application will take the user’s input as to what National Park in Ontario they would like to vacation at, then process the data attributed to that location to provide the user with the potential best week in terms of high temperatures. Along with that, the application will provide the user with a route to their destination by taking their address as an input and calculating the distance and time it will take to get there."
+              description="This app suggests the best week for high temperatures at an Ontario National Park based on user input. It also calculates the distance and travel time to the park using the user's address, and provides a recommended route."
               ghLink="https://github.com/CrusaderJohn/national-park-vacation-picker"
               demoLink="https://crusaderjohn.github.io/national-park-vacation-picker/"
             />
@@ -39,7 +39,7 @@ function portfolio() {
             <PortfolioCard
               img={textEditor}
               title="Just A Text Editor"
-              description="This application is a web-based text editor that allows users to create, edit, and save notes. The application works as a PWA and can be installed on a user's device. "
+              description="The web-based text editor allows users to create, edit, and save notes. As a PWA-enabled app, it can be installed on a user's device, providing offline access to notes without an internet connection. This feature enhances productivity and convenience for users."
               ghLink="https://github.com/WeitheFang/wei-text-editor"
               demoLink="https://wei-text-editor.herokuapp.com/"
             />
@@ -57,7 +57,7 @@ function portfolio() {
             <PortfolioCard
               img={weatherForecast}
               title="Weather Dashboard"
-              description="This app was designed for the user who wants to check the current weather and the weather for the next 5 days."
+              description="The app is ideal for users who want to check current weather and forecasts for the next five days. The Open Weather API provides weather data for any city. The app displays the city name, date, icon image, temperature, humidity, and wind speed for easy reference."
               ghLink="https://github.com/WeitheFang/weichi-weather-dashboard"
               demoLink="https://weithefang.github.io/weather-dashboard/"
             />
@@ -66,7 +66,7 @@ function portfolio() {
             <PortfolioCard
               img={JS}
               title="JS Quiz App"
-              description="This quiz app was designed for user who wants to test their skill in JavaScript. Users have 50 seconds to finish five multiple choice questions related to JavaScript. The faster you answer each question, the higher you can score."
+              description="This quiz app is perfect for users who want to test their knowledge of JavaScript. It presents five multiple-choice questions to be answered within 50 seconds, with faster answers resulting in higher scores. The app is a challenging way to improve JavaScript skills."
               ghLink="https://github.com/WeitheFang/javascript-quiz-app"
               demoLink="https://weithefang.github.io/javascript-quiz-app/"
             />
