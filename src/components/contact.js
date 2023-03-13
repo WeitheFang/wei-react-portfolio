@@ -45,7 +45,9 @@ function Contact() {
     <Container fluid className="contact" id="contact">
       <Container>
         <Col size={12} md={12}>
-          <h2>Contact</h2>
+          <h1>
+            Contact <strong>Me</strong>
+          </h1>
           <p>Please feel free to leave a message</p>
           <Form className="contact-form">
             <Form.Group className="mb-3">
