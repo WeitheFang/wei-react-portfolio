@@ -1,0 +1,11 @@
+.resume {
+  background: url("../assets/images/resume-bg.png");
+  padding: 60px 0 60px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.resume-file {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
