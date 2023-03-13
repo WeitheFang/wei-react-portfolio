@@ -31,7 +31,10 @@ function footer() {
           >
             <img src={linkedinLogo} alt="linkedin" />
           </a>
-          <a href="https://stackoverflow.com/users/21386556/weithefang">
+          <a
+            href="https://stackoverflow.com/users/21386556/weithefang"
+            target="_blank"
+          >
             <img src={stackLogo} alt="stack-overflow" />
           </a>
         </div>
