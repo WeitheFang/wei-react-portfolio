@@ -30,12 +30,12 @@ function AboutMe() {
                 />
               </span>
             </h1>
-            <p>I am Wei! I am a UofT coding bootcamp student! </p>
-            {"\n"}
-            <p>Hope you like my page!</p>
+            <p>
+              I am Wei, a full stack web developer based in Toronto, Canada!
+            </p>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <img src={bannerIcon} alt="header image" />
+            <img src={bannerIcon} alt="unicorn-cat" />
           </Col>
         </Row>
       </Container>
