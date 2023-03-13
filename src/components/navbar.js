@@ -1,14 +1,41 @@
 import { useState, useEffect } from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar, Nav, Container, Button, Modal } from "react-bootstrap";
 import logo from "../assets/images/logo.png";
 import githubLogo from "../assets/images/github-logo.png";
 import linkedinLogo from "../assets/images/linkedin-logo.png";
 import emailLogo from "../assets/images/email-logo.png";
 import "../style/navbar.css";
 
+function MyVerticallyCenteredModal(props) {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter"></Modal.Title>
+      </Modal.Header>
+      <Modal.Body className="modal-body">
+        <h4>Hi there!</h4>
+        <p>
+          I'm Wei, a full stack web developer based in Toronto, Canada. If you
+          would like to get in touch, please feel free to leave me a message at
+          contact form below. I will get back to you as soon as possible.
+        </p>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
+  );
+}
+
 function NavBar() {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
+  const [modalShow, setModalShow] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -97,9 +124,17 @@ function NavBar() {
                 <img src={emailLogo} alt="email" />
               </a>
             </div>
-            <button className="vvd" onClick={() => console.log("clicked")}>
+            <button
+              className="vvd"
+              variant="primary"
+              onClick={() => setModalShow(true)}
+            >
               <span>Let's Connect</span>
             </button>
+            <MyVerticallyCenteredModal
+              show={modalShow}
+              onHide={() => setModalShow(false)}
+            />
           </span>
         </Navbar.Collapse>
       </Container>
