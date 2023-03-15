@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/wei-react-portfolio/static/css/main.f527817e.css",
+    "main.js": "/wei-react-portfolio/static/js/main.3d3cc28d.js",
+    "static/media/contact-bg.png": "/wei-react-portfolio/static/media/contact-bg.91064daf59986437df81.png",
+    "static/media/resume-bg.png": "/wei-react-portfolio/static/media/resume-bg.1967ab1e043a9d042604.png",
+    "static/media/star-night.jpg": "/wei-react-portfolio/static/media/star-night.8e6bee5a8646f9497301.jpg",
+    "static/media/banner-bg.png": "/wei-react-portfolio/static/media/banner-bg.cc1273af450504afe755.png",
+    "static/media/resume.pdf": "/wei-react-portfolio/static/media/resume.ada0d3fde768a4e46b74.pdf",
+    "static/media/banner-icon.png": "/wei-react-portfolio/static/media/banner-icon.0cf1b24ce36c5ddeb179.png",
+    "static/media/chef-choice.png": "/wei-react-portfolio/static/media/chef-choice.9afa31ca8f5cfff202fb.png",
+    "static/media/vacation-picker.png": "/wei-react-portfolio/static/media/vacation-picker.1a3a21de1f552ca07e9b.png",
+    "static/media/weather-forecast.png": "/wei-react-portfolio/static/media/weather-forecast.43603212a726c2cc70ba.png",
+    "static/media/note-taker.png": "/wei-react-portfolio/static/media/note-taker.7f645634651c712a6769.png",
+    "static/media/text-editor.png": "/wei-react-portfolio/static/media/text-editor.c796308e2bdea18a2925.png",
+    "static/media/JS.png": "/wei-react-portfolio/static/media/JS.178e86c49a7d45677733.png",
+    "index.html": "/wei-react-portfolio/index.html",
+    "main.f527817e.css.map": "/wei-react-portfolio/static/css/main.f527817e.css.map",
+    "main.3d3cc28d.js.map": "/wei-react-portfolio/static/js/main.3d3cc28d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f527817e.css",
+    "static/js/main.3d3cc28d.js"
+  ]
+}
