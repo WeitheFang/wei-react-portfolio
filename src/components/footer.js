@@ -2,7 +2,6 @@ import githubLogo from "../assets/images/github-footer.png";
 import linkedinLogo from "../assets/images/linkedin-logo-footer.png";
 import stackLogo from "../assets/images/stack-overflow.png";
 import { AiOutlineHeart } from "react-icons/ai";
-import { BsStackOverflow } from "react-icons/bs";
 
 function footer() {
   return (
@@ -34,6 +33,7 @@ function footer() {
           <a
             href="https://stackoverflow.com/users/21386556/weithefang"
             target="_blank"
+            rel="noreferrer"
           >
             <img src={stackLogo} alt="stack-overflow" />
           </a>
