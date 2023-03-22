@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Typewritter from "typewriter-effect";
-import bannerIcon from "../assets/images/banner-icon.png";
-import "../style/about-me.css";
+import bannerIcon from "../../assets/images/banner-icon.png";
+import "../../style/about-me.css";
 
 function AboutMe() {
   const dataText = [

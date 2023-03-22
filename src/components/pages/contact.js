@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Container, Col, Form } from "react-bootstrap";
-import { validateEmail } from "../utils/helper";
-import "../style/contact.css";
+import { validateEmail } from "../../utils/helper";
+import "../../style/contact.css";
 
 function Contact() {
   const [firstName, setFirstName] = useState("");
@@ -43,7 +43,7 @@ function Contact() {
   };
   return (
     <Container fluid className="contact" id="contact">
-      <Container>
+      <Container className="contact-container">
         <Col size={12} md={12}>
           <h1>
             Contact <strong>Me</strong>

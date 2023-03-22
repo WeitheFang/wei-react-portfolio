@@ -4,6 +4,9 @@
   background-repeat: no-repeat;
 }
 
+.project-container {
+  padding-top: 50px;
+}
 .project-card {
   padding-top: 50px !important;
   padding-bottom: 50px !important;
