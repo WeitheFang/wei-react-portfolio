@@ -4,7 +4,9 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+.resume-container {
+  padding-top: 50px;
+}
 .resume-file {
   margin-top: 50px;
   margin-bottom: 50px;

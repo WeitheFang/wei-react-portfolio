@@ -1,17 +1,17 @@
 import { Container, Col, Row } from "react-bootstrap";
-import "../style/portfolio.css";
+import "../../style/portfolio.css";
 import PortfolioCard from "./portfolio-card";
-import chefChoice from "../assets/images/chef-choice.png";
-import vacationPicker from "../assets/images/vacation-picker.png";
-import textEditor from "../assets/images/text-editor.png";
-import noteTaker from "../assets/images/note-taker.png";
-import weatherForecast from "../assets/images/weather-forecast.png";
-import JS from "../assets/images/JS.png";
+import chefChoice from "../../assets/images/chef-choice.png";
+import vacationPicker from "../../assets/images/vacation-picker.png";
+import textEditor from "../../assets/images/text-editor.png";
+import noteTaker from "../../assets/images/note-taker.png";
+import weatherForecast from "../../assets/images/weather-forecast.png";
+import JS from "../../assets/images/JS.png";
 
 function portfolio() {
   return (
     <Container fluid className="project-section" id="portfolio">
-      <Container>
+      <Container className="project-container">
         <h1 className="project-heading">
           My Recent <strong>Works </strong>
         </h1>
