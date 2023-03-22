@@ -1,4 +1,4 @@
-import "../style/portfolio.css";
+import "../../style/portfolio.css";
 const React = require("react");
 const { Card, Button, Col } = require("react-bootstrap");
 

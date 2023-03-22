@@ -32,8 +32,8 @@ function MyVerticallyCenteredModal(props) {
   );
 }
 
-function NavBar() {
-  const [activeLink, setActiveLink] = useState("home");
+function NavBar({ currentPage, handlePageChange }) {
+  // const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
   const [modalShow, setModalShow] = useState(false);
 
@@ -51,14 +51,14 @@ function NavBar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const onUpdateActiveLink = (link) => {
-    setActiveLink(link);
-  };
+  // const onUpdateActiveLink = (link) => {
+  //   setActiveLink(link);
+  // };
 
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
-        <Navbar.Brand href="#about-me">
+        <Navbar.Brand>
           <img src={logo} alt="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -67,39 +67,38 @@ function NavBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link
-              href="#about-me"
               className={
-                activeLink === "about-me" ? "active navbar-link" : "navbar-link"
+                currentPage === "about-me"
+                  ? "active navbar-link"
+                  : "navbar-link"
               }
-              onClick={() => onUpdateActiveLink("about-me")}
+              onClick={() => handlePageChange("about-me")}
             >
               About Me
             </Nav.Link>
             <Nav.Link
-              href="#portfolio"
               className={
-                activeLink === "portfolio"
+                currentPage === "portfolio"
                   ? "active navbar-link"
                   : "navbar-link"
               }
-              onClick={() => onUpdateActiveLink("portfolio")}
+              onClick={() => handlePageChange("portfolio")}
             >
               Portfolio
             </Nav.Link>
             <Nav.Link
-              href="#contact"
               className={
-                activeLink === "contact" ? "active navbar-link" : "navbar-link"
+                currentPage === "contact" ? "active navbar-link" : "navbar-link"
               }
-              onClick={() => onUpdateActiveLink("contact")}
+              onClick={() => handlePageChange("contact")}
             >
               Contact
             </Nav.Link>
             <Nav.Link
-              href="#resume"
               className={
-                activeLink === "resume" ? "active navbar-link" : "navbar-link"
+                currentPage === "resume" ? "active navbar-link" : "navbar-link"
               }
+              onClick={() => handlePageChange("resume")}
             >
               Resume
             </Nav.Link>
