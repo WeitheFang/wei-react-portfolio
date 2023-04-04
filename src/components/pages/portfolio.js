@@ -19,6 +19,15 @@ function portfolio() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col size={12} sm={6} md={4} className="project-card">
             <PortfolioCard
+              img={noteTaker}
+              title="Better Github ReadME"
+              description="Simplifying the documentation process, this full-stack MERN app lets developers write and edit ReadMe files, then push them directly to GitHub. The user-friendly interface fosters collaboration and boosts efficiency, making coding projects more manageable."
+              ghLink="https://github.com/WeitheFang/better-github-readme"
+              demoLink="https://better-github-readme.herokuapp.com/"
+            />
+          </Col>
+          <Col size={12} sm={6} md={4} className="project-card">
+            <PortfolioCard
               img={chefChoice}
               title="Chef's Choice"
               description="A recipe bank that holds a plethora of recipes added by a variety of users. The recipes are all categorized by type of meal and/or preference of meal. Once you’ve chosen your meal, you can then use the embedded link to purchase the ingredients on the Walmart website."
@@ -42,15 +51,6 @@ function portfolio() {
               description="The web-based text editor allows users to create, edit, and save notes. As a PWA-enabled app, it can be installed on a user's device, providing offline access to notes without an internet connection. This feature enhances productivity and convenience for users."
               ghLink="https://github.com/WeitheFang/wei-text-editor"
               demoLink="https://wei-text-editor.herokuapp.com/"
-            />
-          </Col>
-          <Col size={12} sm={6} md={4} className="project-card">
-            <PortfolioCard
-              img={noteTaker}
-              title="Note Taker"
-              description="This application was designed for the user who wants to write and save notes, so that they can easily organize thoughts and keep track of tasks. This application uses the Express.js on the backend and the will save and retrieve notes from a JSON file."
-              ghLink="https://github.com/WeitheFang/wei-note-taker"
-              demoLink="https://wei-note-taker.herokuapp.com/"
             />
           </Col>
           <Col size={12} sm={6} md={4} className="project-card">
