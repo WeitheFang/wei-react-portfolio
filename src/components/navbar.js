@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container, Button, Modal } from "react-bootstrap";
 import logo from "../assets/images/logo.png";
-import githubLogo from "../assets/images/github-logo.png";
-import linkedinLogo from "../assets/images/linkedin-logo.png";
+import githubLogo from "../assets/images/github-footer.png";
+import linkedinLogo from "../assets/images/linkedin-logo-footer.png";
 import emailLogo from "../assets/images/email-logo.png";
+import stackLogo from "../assets/images/stack-overflow.png";
+
 import "../style/navbar.css";
 
 function MyVerticallyCenteredModal(props) {
@@ -20,9 +22,11 @@ function MyVerticallyCenteredModal(props) {
       <Modal.Body className="modal-body">
         <h4>Hi there!</h4>
         <p>
-          I'm Wei, a full stack web developer based in Toronto, Canada. If you
-          would like to get in touch, please feel free to leave me a message at
-          contact form below. I will get back to you as soon as possible.
+          Hi, my name is Wei, and I'm a full-stack web developer based in
+          Toronto, Canada. If you'd like to get in touch, please feel free to
+          leave me a message using the contact form below. Alternatively, you
+          can find my email on the navbar. I'll do my best to get back to you as
+          soon as possible. Thanks for stopping by!
         </p>
       </Modal.Body>
       <Modal.Footer>
@@ -50,10 +54,6 @@ function NavBar({ currentPage, handlePageChange }) {
 
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-
-  // const onUpdateActiveLink = (link) => {
-  //   setActiveLink(link);
-  // };
 
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
@@ -118,6 +118,13 @@ function NavBar({ currentPage, handlePageChange }) {
                 rel="noreferrer"
               >
                 <img src={linkedinLogo} alt="linkedin" />
+              </a>
+              <a
+                href="https://stackoverflow.com/users/21386556/weithefang"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={stackLogo} alt="stack-overflow" />
               </a>
               <a href="mailto:weichi.fang@mail.utoronto.ca">
                 <img src={emailLogo} alt="email" />
