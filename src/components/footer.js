@@ -1,6 +1,8 @@
 import githubLogo from "../assets/images/github-footer.png";
 import linkedinLogo from "../assets/images/linkedin-logo-footer.png";
 import stackLogo from "../assets/images/stack-overflow.png";
+import emailLogo from "../assets/images/email-logo.png";
+
 import { AiOutlineHeart } from "react-icons/ai";
 
 function footer() {
@@ -36,6 +38,9 @@ function footer() {
             rel="noreferrer"
           >
             <img src={stackLogo} alt="stack-overflow" />
+          </a>
+          <a href="mailto:weichi.fang@mail.utoronto.ca">
+            <img src={emailLogo} alt="email" />
           </a>
         </div>
       </span>
