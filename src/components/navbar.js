@@ -113,7 +113,7 @@ function NavBar({ currentPage, handlePageChange }) {
                 <img src={githubLogo} alt="github" />
               </a>
               <a
-                href="https://www.linkedin.com/in/wei-chi-fang-60610523b/"
+                href="https://www.linkedin.com/in/weichi-fang/"
                 target="_blank"
                 rel="noreferrer"
               >
