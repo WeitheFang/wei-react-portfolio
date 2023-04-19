@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/wei-react-portfolio/static/css/main.8bf647f3.css",
-    "main.js": "/wei-react-portfolio/static/js/main.67401ece.js",
+    "main.js": "/wei-react-portfolio/static/js/main.b855d14a.js",
     "static/media/contact-bg.png": "/wei-react-portfolio/static/media/contact-bg.91064daf59986437df81.png",
     "static/media/resume-bg.png": "/wei-react-portfolio/static/media/resume-bg.1967ab1e043a9d042604.png",
     "static/media/star-night.jpg": "/wei-react-portfolio/static/media/star-night.8e6bee5a8646f9497301.jpg",
     "static/media/banner-bg.png": "/wei-react-portfolio/static/media/banner-bg.cc1273af450504afe755.png",
-    "static/media/resume.pdf": "/wei-react-portfolio/static/media/resume.ada0d3fde768a4e46b74.pdf",
+    "static/media/resume.pdf": "/wei-react-portfolio/static/media/resume.2c8339ef6423c4f3c92d.pdf",
     "static/media/banner-icon.png": "/wei-react-portfolio/static/media/banner-icon.0cf1b24ce36c5ddeb179.png",
     "static/media/chef-choice.png": "/wei-react-portfolio/static/media/chef-choice.9afa31ca8f5cfff202fb.png",
     "static/media/vacation-picker.png": "/wei-react-portfolio/static/media/vacation-picker.1a3a21de1f552ca07e9b.png",
@@ -16,10 +16,10 @@
     "static/media/JS.png": "/wei-react-portfolio/static/media/JS.178e86c49a7d45677733.png",
     "index.html": "/wei-react-portfolio/index.html",
     "main.8bf647f3.css.map": "/wei-react-portfolio/static/css/main.8bf647f3.css.map",
-    "main.67401ece.js.map": "/wei-react-portfolio/static/js/main.67401ece.js.map"
+    "main.b855d14a.js.map": "/wei-react-portfolio/static/js/main.b855d14a.js.map"
   },
   "entrypoints": [
     "static/css/main.8bf647f3.css",
-    "static/js/main.67401ece.js"
+    "static/js/main.b855d14a.js"
   ]
 }
